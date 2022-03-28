@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Fun</title>
+    <style>
+        #wrapper {
+            height:100px;
+            width:400px;
+            border: 1px solid black;
+            padding: 4px;
+            margin: auto;
+        }
+        #left {
+            width: 198px;
+            float: left;
+            border: 1px solid black;
+        }
+        #right {
+            width: 198px;
+            float: left;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<h1>This is my spring project</h1>
+<div id="wrapper">
+    <!--<button style="color:red; font-size: 50px">Click Me!!</button>
+    <select>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+    </select>-->
+    <div id="left">
+        <!--<h1>left</h1>-->
+        <form action="/personData" method="post">
+            <input type="text" name="fname" placeholder="First name">
+            <input type="text" name="lname" placeholder="Last name">
+            <input type="submit" value="Send Data">
+        </form>
+    </div>
+    <div id="right">
+        <!--<h1>right</h1>-->
+        <input type="checkbox" name="Vehicle 1" value="Bike" checked>I am a bike<br>
+        <input type="checkbox" name="Vehicle 2" value="Car">I am a car<br>
+        <input type="checkbox" name="Vehicle 3" value="Scooter">I am a scooter<br>
+    </div>
+</div>
+</body>
+</html>
