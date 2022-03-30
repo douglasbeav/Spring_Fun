@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Person Data</title>
+    <style>
+        #person {
+            height: 200px;
+            width: 500px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 50px;
+            padding: 4px;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
 <h1>This is the person data page</h1>
 
-<span th:text="${first_name}"/>
-<span th:text="${last_name}"/>
+<div id="person">
+    <span style="font-size: 30px">Hello!!!</span><br>
+    <span th:text="${Person.first_name}"/>
+    <span th:text="${Person.last_name}"/>
+    <form action="/index" method="post">
+        <input type="submit" value="Return🏡">
+    </form>
+</div>
 </body>
 </html>

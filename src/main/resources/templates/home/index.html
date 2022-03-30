@@ -12,14 +12,19 @@
             margin: auto;
         }
         #left {
-            width: 198px;
+            width: 190px;
             float: left;
-            border: 1px solid black;
+            border: 1px solid red;
+            padding: 4px;
+        }
+        #left form input {
+            margin-bottom: 4px;
         }
         #right {
             width: 198px;
+            height: 83px;
             float: left;
-            border: 1px solid black;
+            border: 1px solid blue;
         }
     </style>
 </head>
@@ -35,16 +40,16 @@
     <div id="left">
         <!--<h1>left</h1>-->
         <form action="/personData" method="post">
-            <input type="text" name="fname" placeholder="First name">
-            <input type="text" name="lname" placeholder="Last name">
+            <input type="text" name="first_name" required autofocus placeholder="First name">
+            <input type="text" name="last_name" required placeholder="Last name">
             <input type="submit" value="Send Data">
         </form>
     </div>
     <div id="right">
         <!--<h1>right</h1>-->
-        <input type="checkbox" name="Vehicle 1" value="Bike" checked>I am a bike<br>
-        <input type="checkbox" name="Vehicle 2" value="Car">I am a car<br>
-        <input type="checkbox" name="Vehicle 3" value="Scooter">I am a scooter<br>
+        <input type="radio" name="Vehicle" checked>I am a bike<br>
+        <input type="radio" name="Vehicle">I am a car<br>
+        <input type="radio" name="Vehicle">I am a scooter<br>
     </div>
 </div>
 </body>
